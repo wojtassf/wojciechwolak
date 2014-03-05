@@ -35,29 +35,42 @@
 <p><h1>Progam w C</h1></p>
 <p>Program wykonuje rekurencyjną "n" silnię</p>
 
-<pre>
-<code>
+	<pre>
+	<code>
 	
-    #include<stdio.h>
-    #include<stdlib.h>
+    		#include<stdio.h>
+    		#include<stdlib.h>
 
-    int silnia(int a)
-    {
-      if ( a == 0 ) return 1;
-      else return a * silnia(a-1);
-    }
+    		int silnia(int a)
+    		{
+      			if ( a == 0 ) return 1;
+      			else return a * silnia(a-1);
+    		}
 
-    int main ()
-    {
-	    printf("Silnia - %d", silnia(3));
+    		int main ()
+    		{
+	    		printf("Silnia - %d", silnia(3));
 	    
-	    getchar();
+	    		getchar();
 	
-	    return 0;
-    }
+	    		return 0;
+    		}
     
-</code>  
-</pre>
+	</code>  
+	</pre>
+
+<h1><p>Skrypt BASH</p></h1>
+<p>Skrypt wykonujący iterację od $1 do $2 podanych liczb</p>
+
+	<pre>
+		<code>
+			#!/bin/bash
+
+			for (( i=$1; i <= $2; i++ )) ; do
+       				echo " Iteracja nr: $i"
+			done
+		</code>
+	</pre>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
