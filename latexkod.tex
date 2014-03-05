@@ -1,0 +1,86 @@
+\documentclass{article}
+\usepackage{polski}
+\usepackage[cp1250]{inputenc}
+\usepackage{mathtools}
+\begin{document}
+współczynniki \begin{math}\kappa_1, \kappa_2, \ldots , \kappa_p,\end{math} aby w prawej stronie wzoru (3) zredukowały się wektory \begin{math}e_1, e_2, \ldots, e_p.\end{math} Wyrazy zawierające te wektory mają postać
+\begin{displaymath}
+\begin{array}{c}
+\alpha_1e_1+\ldots+\alpha_pe_p-A(\kappa_1e_1+\ldots+\kappa_pe_p)= \\
+=\alpha_1e_1+\ldots+\alpha_pe_p-\kappa_1\lambda_1e_1-\kappa_2(e_1+\lambda_1e_2)-\ldots-\kappa_p(e_{p-1}+\lambda_1e_p)= \\
+=(\alpha_1-\kappa_1\lambda_1-\kappa_2)e_1+(\alpha_2-\kappa_2\lambda_1-\kappa_3)e_2+\\
++\ldots+(\alpha_{p-1}-\kappa_{p-1}\lambda_1-\kappa_p)e_{p-1}+(\alpha_p-\kappa_p\lambda_1)e_p.
+\end{array}
+\end{displaymath}
+Przyrównując do zera współczynnik przy $e_p$ wyznaczamy $k_p$, co jest możliwe, gdyż $\lambda_1 \ne 0$;
+następnie przyrównując do zera współczynnik przy $e_{p-1}$ wyznaczamy $k_{p-1}$ itd. aż do $\kappa_1$. 
+W ten sposób pozbywamy się we wzorze (3) wyrazów z \begin{math}e_1, e_2, \ldots, e_p.\end{math} Analogicznie wyznaczamy inne grupy współczynników.
+\par W ten sposób otrzymujemy wektor $e'$, dla którego
+$$Ae'=0$$
+Dołączając ten wektor do danej bazy otrzymujemy bazę \begin{math}e'; e1 e2 \ldots, ep; f1, f2\\, \ldots, fq; h1, h2, \ldots, h_s\end{math} w przestrzeni $(n+1)$-wymiarowej, w której przekształcenie ma postać kanoniczną. Wektor $e'$ tworzy przy tym osobną grupę z wartością własną równą zeru (a więc, z wartością własną $\lambda$, gdybyśmy nie rozpatrywali zamiast $A$ przekształcenia $A-tE$).
+ \par   Rozpatrzmy teraz drugi przypadek, przypuśćmy mianowicie, że niektórym grupom
+wektorów bazy w n-wymiarowej przestrzeni $R'$ odpowiadają wartości własne przekształcenia $A$ równe zeru. Wówczas z prawej strony (3) będą składniki dwóch rodzajów:
+odpowiadające grupom o wartości własnej różnej od zera oraz grupom, dla których war-
+tość własna jest równa zeru. Z grupami o wartościach własnych różnych od zera możemy
+postąpić tak samo jak w pierwszym przypadku, tj. przez odpowiedni dobór współczynników
+pozbyć się wektorów w prawej stronie wzoru (3). Przypuśćmy, że po tej operacji pozostały
+nam np. trzy grupy składników \begin{math}e_1, e_2, \ldots, e_p; f_1, f_2, \ldots, f_q; g_1, g_2, \ldots, g_r\end{math} o wartości własnej równej zeru, tj. \begin{math}\lambda_1=\lambda_2=\lambda_3=0\end{math}. Wówczas
+\begin{equation}
+\begin{array}{c}
+Ae'=\alpha_1e_1+\ldots+\alpha_pe_p+\beta_1f_1+\ldots+\beta_qf_q+\\
++\gamma_1g_1+\ldots+\gamma_rg_r-A(\kappa_1e_1+\ldots+\kappa_pe_p)-\\
+-A(\mu_1f_1+\ldots+\mu_qf_q)-A(\gamma_1g_1+\ldots+\gamma_rg_r)
+\end{array}
+\end{equation}
+Ponieważ $\lambda_1=\lambda_2=\lambda_3=0$ więc
+	\begin{displaymath}
+		\begin{array}{c c c c}
+		Ae_1=0, & Ae_2=e_1 & \ldots, & Ae_p=e_{p-1}, \\
+		Af_1=0, & Af_2=f_1 & \ldots, & Af_p=f_{q-1}, \\
+		Ag_1=0, & Ag_2=g_1 & \ldots, & Ag_p=g_{r-1},
+		\end{array}\
+	\end{displaymath}
+
+
+A zatem kombinacja liniowa wektorów \begin{math}e_1, e_2,\ldots, e_p\end{math} występująca z prawej strony równości (4) będzie miała postać
+$$\alpha_1e_1+\alpha_2e_2+\ldots+\alpha_pe_p-\kappa_2e_1-\kappa_3e_2-\ldots-\kappa_pe_{p-1}$$
+%------------------------------------------nowa-strona---------------------------------------%
+Przyjmując \begin{math} \kappa_2=\alpha_1, \kappa_3=\alpha_2, \ldots, \kappa_p=\alpha_{p-1} \end{math} pozbędziemy się tu wszystkich składników oprócz jednego, równego $\alpha_pe_p$. Dokonawszy tej samej operacji w grupach \begin{math}f_1,f_2, \ldots,f_q\end{math}
+i \begin{math}g_1,g_2, \ldots,g_r\end{math} otrzymamy wektor $e'$, dla którego
+$$Ae'=\alpha_pe_p+\beta_qf_q+\gamma_rg_r$$
+
+  \par  Przypadkowo może zdarzyć się, że $\alpha_p=\beta_q=\gamma_r=0$; wówczas dochodzimy do wektora $e'$,
+dla którego
+$$Ae'=0$$
+i wówczas, rak jak w pierwszym przypadku, nasze przekształcenie już w bazie \begin{math}e'; e_1, e_2, \ldots, e_p; f_1, f_2, \ldots,f_q; \ldots; h_1, h_2, \ldots, h_s \end{math} ma postać kanoniczną. W tym przypadku wektor $e'$
+stanowi nową klatkę o wartości własnej równej zeru.
+   \par Przypuśćmy teraz, że co najmniej jeden ze współczynników\begin{math} \alpha_p, \beta_q, \gamma_r \end{math} jest różny od zera.
+W tym przypadku, w odróżnieniu od przypadków rozpatrzonych poprzednio, trzeba będzie
+dla sprowadzenia do postaci kanonicznej zmienić także niektóre z wektorów bazy zawartych
+już w $R'$. Uporządkujmy liczby $p$, $q$, $r$ według wielkości. Przypuśćmy np., że $p>q>r$.
+Wówczas budujemy nową grupę zaczynając od $e'$ w sposób następujący. Przyjmujemy
+\begin{math}e'_{p+1} = e', e'_p = Ae'_{p+1}, e'_{p-1}=Ae'_p, \ldots, e'_1=Ae'_2\end{math}. Mamy zatem
+	\begin{displaymath}
+		\begin{array}{c c c c}
+		e'_{p+1}=e' & =\alpha_pe'_p & +\beta_qf_q & \gamma_rg_r, \\
+		e'_{p}=Ae'_{p-1} & =\alpha_pe'_{p-1} & +\beta_qf_{q-1} & \gamma_rg_{r-1}, \\
+		\dotfill & \dotfill & \dotfill & \dotfill \\
+		e'_{p-r+2}=Ae'_{p-r+3} & =\alpha_pe'_{p-r+1} & +\beta_qf_{q-r+1} & \gamma_rg_1, \\
+		e'_{p-r+1}=Ae'_{p-r+2} & =\alpha_pe'_{p-r} & +\beta_qf_{q-r} &\\
+		\dotfill & \dotfill & \dotfill & \dotfill \\
+		e'_A=Ae'_2 & =\alpha_pe_q. & &
+		\end{array}
+	\end{displaymath}
+
+Zastąpmy teraz wektory bazy \begin{math}e',e_1,e_2, \ldots,e_p\end{math} wektorami \begin{math}e'_1,e'_2, \ldots,e'_p, e'_{p+1}\end{math}, a pozostałe
+pozostawmy bez zmiany. Otrzymamy wówczas postać kanoniczną przekształcenia, przy
+czym wymiary pierwszej klatki wzrosną o jedność. Twierdzenie zostało w pełni dowiedzione.
+  \par Widzimy, że w procesie konstrukcji postaci kanonicznej trzeba było rozróżnić dwa przy-
+padki.
+  \par 1. Przypadek, gry dołączona wartość własna $\tau$ (zakładaliśmy, że jest ona równa zeru)
+nie jest identyczna z żadną z poprzednich wartości własnych\begin{math} \lambda_1, \lambda_2, \ldots, \lambda_k\end{math}. W tym przypasku przybywa oddzielna klatka pierwszego stopnia.
+  \par 2. Przypadek, gdy dołączona wartość własna jest identyczna z jedną z poprzednich 
+wartości własnych. W tym przypadku na ogół wymiary jednej z istniejących już klatek
+wzrastają o jedność. Jeżeli jednak współczynnik $\alpha$,$\beta$,$\gamma$ są równe zeru, to tak jak w pierwszym
+przypadku przybywa nowa klatka.
+\end{document}
