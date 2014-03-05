@@ -34,7 +34,34 @@
         <h3>
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p> środowisko programisty </p>
+<p><h1>Środowisko programisty</h1></p>
+
+<p><h1>Progam w C</h1></p>
+<p>Program wykonuje rekurencyjną "n" silnię</p>
+
+<pre>
+<code>
+	
+    #include<stdio.h>
+    #include<stdlib.h>
+
+    int silnia(int a)
+    {
+      if ( a == 0 ) return 1;
+      else return a * silnia(a-1);
+    }
+
+    int main ()
+    {
+	    printf("Silnia - %d", silnia(3));
+	    
+	    getchar();
+	
+	    return 0;
+    }
+    
+</code>  
+</pre>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
